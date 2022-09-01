@@ -1,0 +1,5 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/jrevdavs/public_html/mma/
+        - /bin/cp -R * $DEPLOYPATH

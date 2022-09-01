@@ -1,0 +1,171 @@
+/***********/
+/* GENERAL */
+/***********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-gray);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--header);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+a,
+a:visited {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/**********/
+/* COLORS */
+/**********/
+
+:root {
+  --light-gray: #e6e6e6;
+  --dark-gray: #404040;
+  --header: #5a5a5a;
+  --link: #277739;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+  border-bottom: 1px solid var(--light-gray);
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  gap: 2rem;
+}
+
+#title {
+  text-transform: uppercase;
+  color: #5a5a5a;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/*******/
+/* NAV */
+/*******/
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav li {
+  list-style: none;
+  padding: 0;
+}
+
+nav li a {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+nav li a:hover {
+  text-decoration: none;
+}
+
+nav li a.active {
+  border-bottom: 2px solid var(--link);
+}
+
+/********/
+/* MAIN */
+/********/
+
+main {
+  min-height: calc(100vh - 120px);
+  line-height: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+li {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+}
+
+ol > li,
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.container > ol,
+.container > ul {
+  padding-left: 1rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+  background-color: var(--light-gray);
+  height: 60px;
+  padding: 20px 0;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media only screen and (max-width: 1020px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
